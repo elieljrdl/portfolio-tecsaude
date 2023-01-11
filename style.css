@@ -1,0 +1,305 @@
+/* HEADER*/
+header{
+    background: #788da1;
+    padding: 10px 0px;
+}
+.caixa-header{
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+.logo-header{
+    width: 190px;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 30px;
+}
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px
+}
+nav a{
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.5s all;
+}
+
+nav a:hover{
+    color: white;
+    font-size: 23px;
+}
+
+/* footer */
+footer{
+    background-color: #18191b;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.logo-footer{
+    width: 190px;
+    margin: 15px;
+}
+
+/* index */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.div-do-duzinho{
+    display: flex;
+    flex-direction: column;
+}
+.background-inicial{
+    background: url(medica.jpg);
+    filter: blur(1px);
+    background-position: center;
+    background-size: cover;
+    height: 35em;
+}
+.estrutura{
+    width: 940px;
+    margin: 0 auto;
+    position: absolute;
+    padding: 2em;
+    margin-left: auto;
+    
+}
+
+
+.titulo-inicio{
+    width: 50%;
+    margin: 0 auto;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.titulo-inicio h2{
+    font-size: 35px;
+    color: #788da1;
+}
+.titulo-inicio h3{
+    font-size: 20px;
+}
+.bg2{
+    width: 50%;
+    background:rgba(255,255,255,.7);
+    border-radius: 5px;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.lista-inicio{
+    margin: 1em 0;
+    text-align: left;
+}
+.bg2 h4{
+    font-size: 25px;
+    font-weight: bold;
+}
+.bg2 h4:before{
+    content: "✓ ";
+}
+
+.botao-agendamento{
+    background-color: #788da1;
+    border: 2px;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 2px 0;
+    font-weight: bold;
+}
+
+.botao-agendamento a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+.botao-agendamento:hover{
+    transition:  0.5s all;
+    background-color: #96a8b9;
+}
+
+.beneficio{
+    width: 940px;
+    margin: 6em auto;
+}
+
+.beneficio li{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    vertical-align: top;
+}
+.imagem-beneficio{
+    width: 100px;
+}
+.itens-beneficio{
+    margin: 0 10px;
+    padding: 0 10px;
+}
+
+.mapa-clinica{
+    width: 940px;
+    margin: 30px auto;
+    text-align: center;
+    padding: 10px;
+}
+.mapa-clinica h3{
+    font-weight: bold;
+    margin: 15px 0;
+    font-size: 25px;
+}
+.mapa-clinica p{
+    margin: 15px 0;
+    font-size: 20px;
+
+}
+
+/*agendamento*/
+
+.estrutura-agendamento{
+    display: flex;
+    flex-direction: column;
+}
+
+.background-agendamento{
+    background: url(foto-agendamento.jpg);
+    filter: blur(0px);
+    background-position: center;
+    background-size: cover;
+    height: 30em;
+}
+
+.conteudo-agendamento{
+    width: 100%;
+    margin: 15px auto;
+    position: absolute;
+    text-align: center;
+}
+.conteudo-agendamento h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.form-agendamento{
+    width: 50%;
+    margin: 10px auto;
+    background: rgba(0,0,0,.7);
+    border-radius: 5px;
+    padding: 15px;
+}
+.form-agendamento input{
+    padding: 2px;
+}
+.form-agendamento label{
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+
+.form-agendamento button{
+    width: 50%;
+    background-color: #788da1;
+    border-color: #788da1;
+}
+.form-agendamento button:hover{
+    transition: 0.5 all;
+    background-color: #96a8b9;
+    border-color: #96a8b9;
+
+}
+
+/* contato*/
+.form-contato{
+    width: 940px;
+    margin: 0 auto;
+}
+.form-contato form{
+    margin: 40px 0;
+}
+
+.form-contato label{
+    display: block;
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.input-padrao{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    width: 50%;
+}
+
+.label-arquivo, legend{
+    font-size: 15px;
+}
+
+legend{
+    margin: 0 0 5px;
+}
+
+.enviar{
+    width: 40%;
+    font-size: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 6px;
+    background-color: #788da1;
+    font-weight: bold;
+    border: #788da1;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+.enviar:hover{
+    background-color: #96a8b9;
+    transform: scale(1.2);
+}
+/* responsivo mobile*/
+@media screen and (max-width: 480px){
+    .caixa-header, .titulo-inicio, .estrutura, .beneficio, .mapa-clinica, .form-contato, .conteudo-agendamento{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+        text-align: center;
+    }
+    nav a{
+        font-size: 18px;
+        margin: 0 auto;
+    }
+    nav li{
+        margin: 0 0 0 10px;
+    }
+    .background-inicial{
+        height: 42em;
+    }
+    .bg2{
+        width: 100%;
+    }
+    .beneficio li{
+        display: block;
+        width: 100%;
+        margin: 35px 0;
+    }
+    .mapa-clinica iframe{
+        width: 100%;
+    }
+    .background-agendamento{
+        height: 32em;
+    }
+   .input-padrao, .form-agendamento, .enviar{
+    width: 100%;
+   }
+
+}

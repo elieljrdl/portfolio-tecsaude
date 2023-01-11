@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+        <title>Contato</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="caixa-header">
+                <h1><a href="index.html"><img src="tecsaude-logo.png" class="logo-header"></a></h1>
+                    <nav>
+                        <ul>
+                           <li><a href="index.html"> Home</a></li>
+                            <li><a href="agendamento.html">Agendamento</a></li>
+                            <li><a href="contato.html">Contato</a></li>
+                        </ul>
+                    </nav>
+             </div>
+        </header>
+
+        <main>
+            <div class="form-contato">
+                <form>
+                    <label for="assunto">Assunto</label>
+                    <input type="text" id="assunto" placeholder="Informe o assunto" required class="input-padrao">
+                    
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seuemail@dominio.com" required class="input-padrao">
+
+                    <label for="telefone">Celular</label>
+                    <input type="cel" id="telefone" required placeholder="DDD Seu-Numero" class="input-padrao">
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+                </form>
+
+                <fieldset>
+                    <legend>Anexe um arquivo</legend>
+                    <label for="arquivo"><input type="file" id="arquivo" class="label-arquivo"></label>
+                </fieldset>
+
+                <input type="submit" value="Enviar Fomulário" class="enviar">
+            </div>
+        </main>
+
+        
+        <footer>
+            <img class="logo-footer" src="tecsaude-branco.png">
+            <p>Copyright ©2023 | Eliel Lopes</p>   
+        </footer>
+
+    </body>
+</html>
